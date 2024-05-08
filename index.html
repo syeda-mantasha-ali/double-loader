@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Move Cursor</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+    </div>
+
+    <script>
+        let circle1 = document.querySelector('.circle1');
+        let circle2 = document.querySelector('.circle2');
+
+        for (let i = 0; i <= 80; i++) {
+            let span1 = document.createElement('span');
+            span1.style.setProperty('--i', i);
+            circle1.appendChild(span1);
+
+            let span2 = document.createElement('span');
+            span2.style.setProperty('--i', i);
+            circle2.appendChild(span2);
+        }
+    </script>
+</body>
+
+</html>
